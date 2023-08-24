@@ -1,0 +1,564 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Livewire</title>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <link href="{% static 'homestyl.css' %}" rel="stylesheet" type="text/css" />
+    <style>
+      .topbar{
+        color:white;
+      }
+      .top-courses h3{
+        margin-left: 600px;
+        margin-right: 550px;
+      }
+      .trend-course a{
+        color:white;
+      }
+      .Nasscom h3{
+        margin-left: 600px;
+        margin-right: 470px;
+      }
+      .prime-course a{
+        color:white;
+      }
+      .top-tech h3{
+        margin-left: 600px;
+        margin-right: 470px;
+      }
+      .offered a{
+        color:white;
+      }
+      .demand-1 h3{
+        padding-left: 20px;
+      }
+      .demand-1 p{
+        padding-left: 20px;
+      }
+      .ft-main-item{
+        padding:20px;
+       }
+       .ft-main-item h2{
+        font-size: 28px;
+       }
+       .ft-main-item p{
+        font-size: 18px;
+        margin-left:-10px;
+       }
+       .ft-title{
+        color:#0f3296;
+        padding-bottom: 15px;
+         
+      
+       }
+       .ft-title ul li a{
+    padding-bottom: 40px;
+    padding-right: -10px;
+       }
+       .ft-main-item a{
+        text-decoration: none;
+        color:#000000;
+        font-size: 20px;
+         
+       }
+       .ft-main-item li{
+        padding-bottom: 10px;
+        list-style: none;
+       }
+       .ft-main-item li a:hover{
+        color:rgb(219, 34, 34);
+       }
+       .footer {
+        font-size: 18px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 40px;
+        background-color:#192852;
+        color: white;
+        text-align: center;
+       }
+       .pictures img{
+        padding-left:20px;
+       }
+       .container{
+        width:100%;
+        background:#eef2ff;
+       }
+        
+    </style>
+</head>
+<body onload="slider()" style="font-family: 'Poppins', sans-serif;">
+  <div class="top">
+    <main class="header">
+        <div class="navtype" style="background-color: #0d0761;
+        color:#eef2ff;">
+            <div class="items">
+                <a class="topbar" href="/intern">Internship</a>
+                <a class="topbar" href="#">Blog</a>
+                <a class="topbar" href="contact/">Locate Us</a>
+            </div>
+            <div class="appdown" style="color:white">
+                <div class="appdownload">
+                    Download<br>
+student app  </div>
+<div class="pic">   
+ <a href="https://play.google.com/store/apps/details?id=com.livewireindia.lms"><span> <img src="{% static 'images/google-play.svg' %}" alt="" width="120px" ></span>
+                    </a>  
+                </div>
+             </div>
+             <div class="mail-item"> 
+                 <div class="mail">
+                  
+                    <div class="id"> <a href="" style="color:white;padding-left: 50px;">info@livewireindia.com</a></div>
+                 </div>
+                </div>
+            </div>
+        </div>
+        <nav>
+          <div class="containers">
+              <div class="logo" style="padding-left: 60px;"><img src="{% static 'images/livewirelogo.png' %}" alt=""></div>
+                
+                  <ul class="dropdown" style="margin-top:-80px;margin-left: 500PX;">
+                  <li><a href="#">Courses</a>
+                              
+                                  <ul class="products">
+                                    
+                                      <li><a href="#">Software Development</a>
+                                        <ul class="books">
+                                          <li> <a href="/java">Java</a></li>
+                                          <li> <a href="/adjava">Advanced Java</a></li>
+                                          <li> <a href="/c">C Programming</a></li>
+
+                                         <li><a href="/ac">C++ Programming</a></li>
+                                         <li><a href="/mern">Full Stack Development</a></li>
+
+                                         <li> <a href="/django">Django</a></li>
+                                         <li> <a href="/app">Android App Development</a></li>
+                                         <li> <a href="/cs">ASP.net with C#</a></li>
+
+
+                                        </ul>
+                                      
+                                      
+                                      
+                                      </li>
+                                      <li><a href="#">Industrial Automation</a>
+                                        <ul class="books1">
+                                          <li> <a href="/plc">PLC And CADA</a></li>
+                                          <li> <a href="/epsa">Electrical power system analysis</a></li>
+                                           
+                                          </ul>
+                                      </li>
+                                      <li><a href="#">Electronic Design Automation</a>
+                                        <ul class="books2">
+                                          <li> <a href="/matlab">MATLAB</a></li>
+                                          <li> <a href="/microcont">MicroController</a></li>
+                                          <li> <a href="/amicrocont">Advanced Microcontroller</a></li>
+                                          </ul>
+                                        </li>
+                                      <li><a href="#">ITIM</a>
+                                        <ul class="books3">
+                                          <li> <a href="/neteng">Network Enginnering</a></li>
+                                          <li> <a href="/netsec">Network Security</a></li>
+                                          <li> <a href="/ethical">Ethical Hacking</a></li>
+                                          </ul>
+                                        </li>
+                                      <li><a href="#">Special Programs</a>
+                                        <ul class="books4">
+                                          <li> <a href="/ds">Data Science</a></li>
+                                          <li> <a href="/dsde">Data Science and Data Engineering using Python</a></li>
+                                          <li> <a href="/dsr">Data Science Using R</a></li>
+                                          <li> <a href="/dapb">Data Analytics using Power BI</a></li>
+                                          <li> <a href="/ml">Machine Learning</a></li>
+                                          <li> <a href="/mlp">Machine Learning using Python</a></li>
+                                          <li> <a href="/mlr">Machine Learning using R</a></li>
+                                          <li> <a href="/bc">Blockchain</a></li>
+                                          <li> <a href="/ai">Artificial Intelligence</a></li>
+                        
+                                          <li> <a href="/rpa">RPA</a></li>
+                                          <li> <a href="/robo">Robotics</a></li>
+                                          <li> <a href="/IOT">IOT</a></li>
+                                          <li> <a href="/nlp">Complete Guide to NLP Chat GPT</a></li>
+                                          <li> <a href="/tdprinting">3D Printing</a></li>
+                                          </ul>
+                                        </li>
+                                  </ul>
+                             
+                  </li>
+                  <li><a href="webin/">Webinar</a></li>
+                  <li><a href="contacts/">Contact</a></li>
+              </ul>
+          
+           </div>
+       </nav>
+    </main>
+ </div> 
+
+
+
+
+
+   <section> 
+        <div class="part"> 
+            <div class="banner">  
+                <div class="slider">
+                     <a href="#"> <img src="{% static 'images/world-of-ai.webp' %}" width="100%" height="600px" id="slideimg"> </a>
+                </div>
+                <div class="overlay">
+                     
+                     </div>
+                      
+            </div>
+            <div class="five"> 
+                <div class="str-partner-1">
+                  <p>Strategic Partner</p>
+                </div>  
+                <div class="str-partner" >
+                    <img src="{% static 'images/future-skills.webp' %}" alt="" height="90px">
+                </div> 
+                <div class="str-partner" >
+                    <img src="{% static 'images/ec-council.webp' %}" alt="" height="90px">
+                </div> 
+                <div class="str-partner" >
+                    <img src="{% static 'images/nsdc.webp' %}" alt="" height="90px">
+                </div> 
+                <div class="str-partner" >
+                    <img src="{% static 'images/skill-india.webp' %}" alt="" height="90px">
+                </div>  
+          </div>  
+        </div>        
+      </section>  
+  <section> 
+        <div class="demand-slider"> 
+          <div class="demand">
+            <div class="demand-1">
+                <h3>Develop In-Demand<br> Skills</h3>
+                <p>Livewire's on-demand courses in emerging technologies give you the knowledge you need to stay ahead of the curve and succeed in today's fast-paced world.</p>
+            </div>
+            <div class="compre">
+                <h3> Comprehensive <br>Learning Experience</h3>
+                 
+            </div>
+            <div class="assured">
+                <h3>
+                    Assured Job Placement
+                </h3>
+                 </div>
+          </div>
+          <div class="not-possi">
+            <img src="{% static 'images/compreh.webp' %}" alt="">
+          </div>
+        </div>
+     </section>
+     <section>
+        <div class="top-courses">
+            <h3>Top Trending Courses</h3>
+            <div class="trend"> 
+            <div class="trend-course"  style="height:400px">
+                  <img src="{% static 'images/Asp.net.jpg' %}" alt="" width="250px" height="150px">
+                  <h5>Trending Courses<br></h5>
+                    <h4> ASP.net with C# Course</h4>
+                
+                  <p class="p-tag">In-center | Online | Hybrid<br>
+                     100 Hours | Full / Part time <br>
+                    Career Support | Placements</p>
+                    <a href="/cs" class="a-tag">Know More<i class="fa fa-arrow-right"></i></a>
+            </div>
+            <div class="trend-course">
+                <img src="{% static 'images/1680689719_full-stack.jpg' %}" alt="" width="250px" height="150px" style="padding-top: 5px;">
+                <h5>Trending Courses<br></h5>
+                   <h4>  Full Stack Development -<br> MEAN / MERN stack</h4>
+                 
+                <p>In-center | Online | Hybrid<br>
+                   100 Hours | Full / Part time <br>
+                  Career Support | Placements</p>
+                  <a href="/mern"> Know More<i class="fa fa-arrow-right"></i></a>
+          </div>
+          <div class="trend-course">
+            <img src="{% static 'images/1680686120_android.jpg'%}" alt="" width="250px" height="150px">
+            <h5>Trending Courses<br> </h5>
+                <h4> Android App Development <br>using KOTLIN</h4>
+            
+            <p>In-center | Online | Hybrid<br>
+               100 Hours | Full / Part time <br>
+              Career Support | Placements</p>
+              <a href="/app">Know More<i class="fa fa-arrow-right"></i></a>
+      </div>
+      <div class="trend-course">
+        <img src="{% static 'images/1680690448_java.jpg' %}" alt="" width="250px" height="150px">
+        <h5>Trending Courses<br></h5>
+         <h4>   Java and Advanced Java</h4> 
+         
+        <p class="p1-tag">In-center | Online | Hybrid<br>
+           100 Hours | Full / Part time <br>
+          Career Support | Placements</p>
+         
+            <a href="/java" class="a1-tag">Know More<i class="fa fa-arrow-right"></i></a> 
+  </div>
+</div>
+        </div>
+     </section>
+     <section class="nasscom-1" style="height:600px">
+        <div class="Nasscom">
+            <h3>NASSCOM Approved Courses</h3>
+            <div class="nass-cour"  >
+                <div class="future-skipri" style="height:400px" >
+                    <img src="{% static 'images/future-skills.webp' %}" alt=""  >
+                    <p>Accredited by NASSCOM,<br>
+                         approved by the<br>
+                          Government of India</p>
+                </div>
+                <div class="future-cou">
+                    <div class="prime-course">
+                        <img src="{% static 'images/1681135008_IOT.jpg' %}" alt="" width="250px" height="150px">
+                        <h5>Trending Courses<br></h5>
+                          <h4>Internet of Things</h4>
+                      
+                        <p class="p-tag">In-center | Online | Hybrid<br>
+                           100 Hours | Full / Part time <br>
+                          Career Support | Placements</p>
+                          <a href="/IOT" class="a-tag">Know More<i class="fa fa-arrow-right"></i></a>
+                  </div>
+                  <div class="prime-course">
+                      <img src="{% static 'images/1681124290_Robotic-Process-Automation-(RPA).jpg' %}" alt="" width="250px" height="150px">
+                      <h5>Trending Courses<br></h5>
+                         <h4>Robotic Process<br> Automation</h4>
+                       
+                      <p>In-center | Online | Hybrid<br>
+                         100 Hours | Full / Part time <br>
+                        Career Support | Placements</p>
+                        <a href="/rpa"> Know More<i class="fa fa-arrow-right"></i></a>
+                </div>
+                <div class="prime-course">
+                  <img src="{% static 'images/1681122848_Python.jpg' %}" alt="" width="250px" height="150px">
+                  <h5>Trending Courses<br> </h5>
+                      <h4> Python Course</h4>
+                  
+                  <p class="pri-tag">In-center | Online | Hybrid<br>
+                     100 Hours | Full / Part time <br>
+                    Career Support | Placements</p>
+                    <a href="/python">Know More<i class="fa fa-arrow-right"></i></a>
+            </div>
+                   
+               
+                </div>
+            </div> 
+        </div>
+     </section>
+     <section>
+        <div class="top-tech">
+            <h3>Top Technologies Offered</h3>
+            <div class="technology">
+                <div class="offered">
+                    <img src="{% static 'images/software.webp' %}" alt="">
+                    <h4>Software Development</h4>
+                    <a href="/recomm">View Course</a>
+                </div>
+                <div class="offered">
+                    <img src="{% static 'images/Electronic-Design-Automation.webp' %}" alt="">
+                    <h4>Electronic-Design-Automation</h4>
+                    <a href="/matlab">View Course</a>
+                </div>
+                <div class="offered">
+                    <img src="{% static 'images/Industrial-Automation.webp' %}" alt="">
+                    <h4>Industrial-Automation</h4>
+                    <a href="/epsa">View Course</a>
+                </div>
+            </div>
+            <div class="technology">
+                <div class="offered">
+                    <img src="{% static 'images/IT-Infrastructure-Management.webp' %}" alt="">
+                    <h4>IT-Infrastructure-Management </h4>
+                    <a href="/netsec">View Course</a>
+                </div>
+                <div class="offered">
+                    <img src="{% static 'images/data-science.webp' %}" alt="">
+                    <h4> Data-science</h4>
+                    <a href="/ds">View Course</a>
+                </div>
+                <div class="offered">
+                    <img src="{% static 'images/Machine-Learning.webp' %}" alt="">
+                    <h4> Machine-Learning</h4>
+                    <a href="/mlp">View Course</a>
+                </div>
+            </div>
+        </div>
+     </section>
+     <section> 
+     <div class="meta">
+        <div class="metal">
+          <div class="metal1">
+            <h1 class="heading" style="padding:15px 0;font-size:30px">Meta Words : Webinar Series</h1>
+              <h2 >Insights on Semi- Conductor Industry - VLSI</h2>
+              <p style="font-size:17px;">This webinar talks about how the global semiconductor industry is <br/> projected to become a trillion-dollar industry by 2030.</p>
+          </div>
+          <div class="metal2">
+            <p>Presenter:</p>
+            <h2 style="padding:20px 0;">Mr.Piyush Upadhyay</h2>
+            <p>Senior Lead Design Engineer, NXP</p>
+          </div>
+          <div class="metal3">
+            <a href="#" style="color:black;font-weight:bold;font-size:20px;margin-top: 20px;margin-left:-20px;" > Past Webinar</a>
+            <button class="web" style="margin-left: 20px;">See All Webinars</button>
+          </div>
+      
+        </div>
+        <div class="metar">
+          <img style="padding: 100px;" src="{% static 'images/halfmoon.webp' %}" alt="halfmoon">
+        </div>
+      
+      </div>
+       
+    </section>
+    <section>
+        <div class="timg">
+            <img src="{% static 'images/summer-strip.webp' % }" style="width:100%" alt="">
+          </div>
+          <div class="testi" style="background-color: #eef2ff;" >
+           <div class="testil" style="padding:100px;width:35%">
+          <h1  class="hear" style="color:#0f3296;padding:20px 0";>Hear from Our Students</h1>
+          <p style="font-size:20px";>Livewire students talk about their enjoyable learning<br/> experiences that included practical training, best practises, <br/>job prospects, and exposure to reputable businesses and organisations.</p>
+          <a href="#" style="font-weight: bold;font-size:17px;padding:20px 0;color:black">See More Testimonial</a>
+           </div>
+           <div class="testir" style="padding-right:150px;padding:100px;">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/xKdnkWPhfH8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+           </div>
+          </div>
+          
+    </section>
+    <div class="recruiters" >
+        <h1 style="color:#0f3296;text-align: center;padding-top: 100px;">Prime Recruiters</h1>
+        
+          <div class="gridc" style="display: grid;grid-template-columns: repeat(4, 1fr);margin:100px;" >
+              <div class="shadow" ><img alt="iconalt1" src="{% static 'images/ibm.webp' %}" width="200" height="100"  /></div>
+              <div class="shadow"><img alt="iconalt1" src="{% static 'images/infosys.webp' %}" width="200" height="100"  /></div>
+              <div class="shadow"><img alt="iconalt1" src="{% static 'images/tcs.webp' %}" width="200" height="100" /></div>
+              <div class="shadow"><img alt="iconalt1" src="{% static 'images/hcl.webp' %}" width="200" height="100" decoding="async"  /></div>
+              <div class="shadow"><img alt="iconalt1" src="{% static 'images/accenture-technology.webp' %}" width="200" height="100" /></div>
+              <div class="shadow"><img alt="iconalt1" src="{% static 'images/accentyre.webp' %}" width="200" height="100" /></div>
+              <div class="shadow"><img alt="iconalt1" src="{% static 'images/capgemini.webp' %}" width="200" height="100"  /></div>
+              <div class="shadow"><img alt="iconalt1" src="{% static 'images/cognizant.webp' %}" width="200" height="100" /></div>
+              <div class="shadow"><img alt="iconalt1" src="{% static 'images/mindtree.webp' %}" width="200" height="100"  /></div>
+              <div class="shadow"><img alt="iconalt1" src="{% static 'images/tech-mahindra.webp' %}" width="200" height="100" /></div>
+              <div class="shadow"><img alt="iconalt1" src="{% static 'images/wipro.webp' %}" width="200" height="100"  /></div>
+          </div>
+      
+      </div>
+      <div class="group" style="display:flex;">
+        <div class="groupi" style="width:50%;padding-left: 170px;">
+          <img src="{% static 'images/group.webp'%}" width="500" height="400" alt="">
+        </div>
+        <div class="groupr" style="padding-left: -50px;width:50%;padding-top: 50px;padding-bottom:50px;">
+          <h1 style="color:#0f3296;padding:20px 0;">
+            Internships for Students
+      
+          </h1>
+          <p style="font-size: 19px;line-height: 28px;">Livewire has created internship courses that cater to a variety of <br/>topics, providing students with hands-on experience in industry <br/>projects, in response to the current demand from <br/> colleges and enterprises.
+      
+          </p>
+          <a href="" style="font-weight: bold;font-size: 20px;text-decoration: none;padding:20px 0;">Apply Now</a>
+        </div>
+      </div>
+      
+        <footer>
+          
+          <div class="ft-main" style="display:flex;background-color: #eef2ff;margin:100px;margin-bottom: 0;">
+            <div class="ft-main-item" style="padding-left: 50px;">
+              <h2 class="ft-title">About</h2>
+              <p>1st Floor, K.R. Ahamed Sha <br/>office complex, No. 25, Dr.<br/> Radhakrishnan Salai, Mylapore, Chennai - 600 004,<br/> Tamil Nadu, India.</p>
+              <h2 style="color:#192852;">Get In Touch</h2>
+              <p class="flex bg-[#192852] p-2 text-white gap-2 text-sm w-[70%] font-light justify-center" style="background-color: #192852;width:220px;"><h4>Email</h4> <a href="mailto:info@livewireindia.com" style="color:black;">info@livewireindia.com</a></p>
+              <div class="ft-social">
+                <ul class="ft-social-list" style="display:flex;padding:10px;gap:10px;">
+                  <li><a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i>
+                  </a></li>
+                  <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                  <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                  <li><a href="#"><i class="fab fa-github"></i></a></li>
+                  <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                  <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                </ul>
+                </div>
+             </div> 
+            <div class="ft-main-item">
+              <h2 class="ft-title">Quick Links</h2>
+              <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="webin/">Webinar</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Student Corner</a></li>
+                <li><a href="contact/">Contact</a></li>
+              </ul>
+            </div>
+            <div class="ft-main-item">
+              <h2 class="ft-title">Technologies Offered</h2>
+              <ul>
+                <li><a href="#">Software Development</a></li>
+                <li><a href="#">Electronic Design Automation</a></li>
+                <li><a href="#">Industrial Automation</a></li>
+                <li><a href="#">IT Infrastructure Management</a></li>
+                <li><a href="#">Data Science</a></li>
+                <li><a href="#">Machine Learning</a></li>
+              </ul>
+            </div>
+            <div class="ft-main-item" style="float:right;">
+                <h2 class="ft-title">Trending Courses</h2>
+                <ul>
+                  <li><a href="#">Python</a></li>
+                  <li><a href="#">Data Science</a></li>
+                  <li><a href="#">blockchain</a></li>
+                  <li><a href="#">IOT</a></li>
+                  <li><a href="#">Robotic Process Autonmation(RPA)</a></li>
+                  
+                </ul>
+              </div>
+            </div>
+              <div class="pictures" style="float:right;padding: 20px; margin-top: 0%;gap:10px;margin-right: 50px; background: white">
+                <div class="lg:flex grid grid-cols-2 justify-end items-center gap-12 mb-8 pt-6 p-5" style="padding-left:40px;padding-bottom: 30px;padding-top:-50px">
+                  <img alt="future-skills" title="future-skills" src="{% static 'images/future-skills.webp' %}" width="150px" height="80px" decoding="async" data-nimg="1" loading="lazy" style="color:transparent">
+                  <img alt="skill-india" title="skill-india" src="{% static 'images/skill-india.webp' %}" width="150px" height="80px" decoding="async" data-nimg="1" loading="lazy" style="color:transparent">
+                  <img alt="nsdc" title="nsdc" src="{% static 'images/nsdc.webp' %}" width="150px" height="80px" decoding="async" data-nimg="1" loading="lazy" style="color:transparent">
+                  <img alt="livewire-logo" title="livewire-logo" src="{% static 'images/livewirelogo.png' %}" width="150px" height="40px" decoding="async" data-nimg="1" class="h-6" loading="lazy" style="color:transparent">
+              </div>
+            </div>
+              
+          
+          </footer>
+        
+         
+      
+     <script>
+        var slideimg = document.getElementById("slideimg"); 
+        var images= new Array (
+    "{% static 'images/world-of-ai.webp' %}",
+     "{% static 'images/chatgpt-01.webp' %}",
+      
+        );
+        var len=images.length;
+        var i=0;
+        function slider(){
+           if(i>len-1){
+             i=0;
+           }
+           slideimg.src=images[i];
+           i++;
+           setTimeout('slider()',3000);
+        }
+
+     </script>
+        
+</body>
+</html>

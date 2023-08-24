@@ -1,0 +1,339 @@
+body{
+ 
+    overflow-x:hidden;
+    font-family: poppins,'sans-serif';
+    
+  }
+  .top{
+     margin-top: 20px;
+  }
+  .topbar{
+      font-size: 18px;
+      padding: 20px;
+      font-family: 'Poppins', sans-serif;
+      font-weight: bold;
+      color: white;
+  }
+  .items{
+    padding-top: 10px;
+  }
+  a{
+      text-decoration: none;
+      color: black;
+  }
+  .appdown{
+      padding-left: 200px;
+      display: flex; 
+      padding-bottom: 2px;
+      font-weight: bold;
+      padding-top: 3px;
+      color:#f2f8ff;
+  }
+  .appdown a{
+       padding-left: 20px;
+       font-size: 20px;
+  }
+   
+  .navtype{
+      height:48px;
+      width:97%;
+      padding-left: 40px;
+      border-bottom: 2px solid black;
+      background-color: #0d0761;
+      color:#eef2ff;
+      
+      display: flex;
+      font-weight: bold;
+  }
+  .mail  {
+     padding-left: 70px; 
+       
+  }
+  .mail-item{
+      display: flex;
+  }
+  .row{
+       
+       display:none;
+  } 
+  .wrapper-1 ul{
+      display: flex;
+  }
+  .wrapper-1 ul li{
+      margin-left: 50px;
+  }
+  .nav-links li:hover .row{
+      display: block;
+      position:absolute;
+      background: white;
+      margin-top:10px;
+      margin-left:-10px;
+  }
+  .nav-links ul li:hover .row ul{
+      display:block;
+      left:0;
+      width:20px;
+  }
+   
+  .id{
+      padding-top: 20px;
+      padding-left: 10px;
+      font-size: 18px;
+  }
+  nav .wrapper-1{
+      padding-top: 20px;
+      padding-left: 50px;
+      display: flex;
+      background:white;
+      height:50px;
+      width:97%;
+      border-bottom: 1px solid black;
+  }
+  .nav-links li a{
+      color:black;
+      text-decoration: none;
+      font-size: 20px;
+      font-weight: bold;
+  }
+  .nav-links li{
+      list-style: none;
+      padding-left: 150px;
+  }
+  .nav-links{
+      display: flex;
+      justify-content: space-between;
+      padding-left: 28px;
+  }
+  .id a{
+    color:white;
+  }
+  li .stu-login{
+      border-bottom: 2px solid ;
+      border-top: 2px solid;
+      border-left: 2px solid;
+      border-right: 2px solid;
+      padding: 5px;
+      padding-top: 5px;
+      border-radius: 5px;
+      background: linear-gradient(to right,blue,red);
+  }
+  .stu-login i{
+      padding:6px;
+  }
+  .banner{
+    width:100%;
+    height:450px;
+  }
+  h1{
+  color:#0F3296;
+    text-align:center;
+  }
+  
+  p{
+  margin:0 200px;  
+    font-size:20px;
+    
+  }
+  .webinar h3{
+          font-size: 25px;
+          padding-left: 650px;
+          color:#0F3296; 
+          padding-top: 10px;
+       }
+       .web-1{
+          padding-top: 60px;
+  display: flex;
+  grid-gap:3rem;
+  padding-left: 250px;
+       }
+       .web-2{
+          width:270px;
+         height:400px;
+         border-bottom:2px solid black;
+         border-top:2px solid black;
+         border-left:2px solid black;
+         border-right:2px solid black;
+         
+  
+       }
+  .web-2 img{
+    padding-left:10px;
+  }
+       .web-2 h2{
+          color:#0F3296;
+          font-size: 20px;
+          padding-bottom: 2px;
+         padding-left:10px;
+       }
+  .web-2 h4{
+    padding-left:10px;
+  }
+  .web-2 h5{
+    padding-left:10px;
+  }
+       .web-2 a{
+          padding: 5px;
+          background-color: #0F3296;
+          border-radius: 5px;
+          margin-left: 30px;
+       }
+  
+       .ft-main-item{
+        padding:20px;
+       }
+       .ft-main-item h2{
+        font-size: 28px;
+       }
+       .ft-main-item p{
+        font-size: 18px;
+        margin-left:-10px;
+       }
+       .ft-title{
+        color:#0f3296;
+        padding-bottom: 15px;
+         
+      
+       }
+       .ft-title ul li a{
+    padding-bottom: 40px;
+    padding-right: -10px;
+       }
+       .ft-main-item a{
+        text-decoration: none;
+        color:#000000;
+        font-size: 20px;
+         
+       }
+       .ft-main-item li{
+        padding-bottom: 10px;
+        list-style: none;
+       }
+       .ft-main-item li a:hover{
+        color:rgb(219, 34, 34);
+       }
+       .footer {
+        font-size: 18px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 40px;
+        background-color:#192852;
+        color: white;
+        text-align: center;
+       }
+       .pictures img{
+        padding-left:20px;
+       }
+       .container{
+        width:100%;
+        background:#eef2ff;
+       }
+        
+     .containers{
+    margin-top:20px;
+    margin-bottom:20px;
+   } 
+   .dropdown{
+    display:flex;
+    justify-content:center;
+    list-style-type:none;
+   }
+   .dropdown a{
+  
+    padding:25px;
+    display:block;
+    width:150px;
+    color:#000000;
+    
+    font-size:1.2rem;
+    font-weight:bold;
+    text-decoration:none;
+    text-align:center;
+   }
+   
+   .dropdown a:hover{
+    background-color:#fff;
+    border-style:solid;
+    border-color:rgb(17, 17, 89);
+    color:rgb(211, 15, 15);
+   }
+   .products{
+    list-style-type:none;
+    display:none;
+       }
+  
+    .dropdown li:nth-child(1):hover .products{
+        display:block;
+        height:800px;
+  
+    }
+    .books{
+        list-style-type:none;
+      transform:translateX(200px) translateY(-70px);
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      
+      position:absolute;
+       visibility:hidden;
+    }
+    .books1{
+       
+        list-style-type:none;
+      transform:translateX(200px) translateY(-70px);
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      
+      position:absolute;
+       visibility:hidden;
+    }
+    .books2{
+        list-style-type:none;
+      transform:translateX(200px) translateY(-70px);
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      
+      position:absolute;
+       visibility:hidden;
+    }
+    .books3{
+        list-style-type:none;
+      transform:translateX(200px) translateY(-70px);
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      
+      position:absolute;
+       visibility:hidden;
+    }
+    .books4{
+        list-style-type:none;
+      transform:translateX(200px) translateY(-400px);
+      display:grid;
+      grid-template-columns:repeat(4,1fr);
+      
+      position:absolute;
+       visibility:hidden;
+    }
+    
+    .products li:nth-child(1):hover .books{
+               visibility:visible;
+    }
+    .products li:nth-child(2):hover .books1{
+        visibility:visible;
+  
+    }
+  .products li:nth-child(3):hover .books2{
+    visibility:visible;
+  }
+  .products li:nth-child(4):hover .books3{
+    visibility:visible;
+  
+  }
+  .products li:nth-child(5):hover .books4{
+    visibility:visible;
+  
+  }
+  
+  .hear{
+    padding: 20px 0;
+  }
