@@ -97,7 +97,25 @@
         width:100%;
         background:#eef2ff;
        }
-        
+       .btn{
+        color:white;
+      margin-top: 10px;
+      padding-top: 5px;
+      padding-bottom: 6px;
+      margin-left: 20px;
+      padding-left: 15px;
+      padding-right: 15px;
+      border-bottom: 2px solid ;
+      border-top: 2px solid;
+      border-left: 2px solid;
+      border-right: 2px solid;
+      border-radius: 5px;
+      background:linear-gradient(to right,blue,red) ;
+}
+      
+
+
+     
     </style>
 </head>
 <body onload="slider()" style="font-family: 'Poppins', sans-serif;">
@@ -469,14 +487,16 @@ student app  </div>
           <p style="font-size: 19px;line-height: 28px;">Livewire has created internship courses that cater to a variety of <br/>topics, providing students with hands-on experience in industry <br/>projects, in response to the current demand from <br/> colleges and enterprises.
       
           </p>
-          <a href="" style="font-weight: bold;font-size: 20px;text-decoration: none;padding:20px 0;">Apply Now</a>
+          <button class="btn" style="margin-top: 3%;margin-left: -1%;margin-left: 1%;">
+          <a href="" style="font-weight: bold;font-size: 20px;text-decoration: none;padding:20px 0;color:white;">Apply Now</a>
+          </button>
         </div>
       </div>
-      
-        <footer>
+      <div>
+        <footer style="width:100%;">
           
-          <div class="ft-main" style="display:flex;background-color: #eef2ff;margin:100px;margin-bottom: 0;">
-            <div class="ft-main-item" style="padding-left: 50px;">
+          <div class="ft-main" style="display:flex;background-color: #eef2ff;margin-bottom: 0;margin-top: 10%;">
+            <div class="ft-main-item" style="padding-left: 100px;">
               <h2 class="ft-title">About</h2>
               <p>1st Floor, K.R. Ahamed Sha <br/>office complex, No. 25, Dr.<br/> Radhakrishnan Salai, Mylapore, Chennai - 600 004,<br/> Tamil Nadu, India.</p>
               <h2 style="color:#192852;">Get In Touch</h2>
@@ -499,7 +519,6 @@ student app  </div>
                 <li><a href="#">About</a></li>
                 <li><a href="webin/">Webinar</a></li>
                 <li><a href="#">Blog</a></li>
-                <li><a href="#">Student Corner</a></li>
                 <li><a href="contact/">Contact</a></li>
               </ul>
             </div>
@@ -526,17 +545,12 @@ student app  </div>
                 </ul>
               </div>
             </div>
-              <div class="pictures" style="float:right;padding: 20px; margin-top: 0%;gap:10px;margin-right: 50px; background: white">
-                <div class="lg:flex grid grid-cols-2 justify-end items-center gap-12 mb-8 pt-6 p-5" style="padding-left:40px;padding-bottom: 30px;padding-top:-50px">
-                  <img alt="future-skills" title="future-skills" src="{% static 'images/future-skills.webp' %}" width="150px" height="80px" decoding="async" data-nimg="1" loading="lazy" style="color:transparent">
-                  <img alt="skill-india" title="skill-india" src="{% static 'images/skill-india.webp' %}" width="150px" height="80px" decoding="async" data-nimg="1" loading="lazy" style="color:transparent">
-                  <img alt="nsdc" title="nsdc" src="{% static 'images/nsdc.webp' %}" width="150px" height="80px" decoding="async" data-nimg="1" loading="lazy" style="color:transparent">
-                  <img alt="livewire-logo" title="livewire-logo" src="{% static 'images/livewirelogo.png' %}" width="150px" height="40px" decoding="async" data-nimg="1" class="h-6" loading="lazy" style="color:transparent">
-              </div>
+             
             </div>
               
           
           </footer>
+        </div>
         
          
       
