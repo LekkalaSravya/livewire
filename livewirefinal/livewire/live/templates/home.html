@@ -114,7 +114,16 @@
 }
       
 
-
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: 18px;
+  }
+  .trend{
+    display:flex;
+    flex-direction: row;
+    width:10%;
+  }
+}
      
     </style>
 </head>
@@ -126,7 +135,7 @@
             <div class="items">
                 <a class="topbar" href="/intern">Internship</a>
                 <a class="topbar" href="#">Blog</a>
-                <a class="topbar" href="contact/">Locate Us</a>
+                <a class="topbar" href="contacts/">Locate Us</a>
             </div>
             <div class="appdown" style="color:white">
                 <div class="appdownload">
@@ -284,7 +293,7 @@ student app  </div>
      <section>
         <div class="top-courses">
             <h3>Top Trending Courses</h3>
-            <div class="trend"> 
+            <div class="trend" > 
             <div class="trend-course"  style="height:400px">
                   <img src="{% static 'images/Asp.net.jpg' %}" alt="" width="250px" height="150px">
                   <h5>Trending Courses<br></h5>
