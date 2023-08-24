@@ -116,6 +116,12 @@
     visibility:visible;
 
 }
+.cont-1 p{
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+ 
     </style>
 </head>
 
@@ -244,8 +250,8 @@ student app  </div>
     </div>
   </div>
    <div class="cou-high">
-    <h2>Course-Key Highlights</h2>
-    <div class="highli">
+    <h2 style="padding-top:2% ;padding-bottom: 2%;">Course-Key Highlights</h2>
+    <div class="highli" style="padding-bottom: 3%;">
       <div class="progr-dura">
         <img src="{% static 'images/clock.png' %}" width="45px">
         <p>Program Duration</p>
@@ -278,10 +284,10 @@ student app  </div>
 
    <section style="display:flex;margin-top: 100px;">
     <div class="para">
-      <h1 style="color:#192852;">{{op.name2}}</h1>
-      <p>{{op.des2}}</p>
-      <h1 style="color:#192852;margin-top: 40px;">Course objective</h1>
-      <p>{{op.objective}}</p>
+      <h1 style="color:#192852; padding-bottom: 2%;">{{op.name2}}</h1>
+      <p style="letter-spacing: 2%;font-size: 18px;padding: 2%;">{{op.des2}}</p>
+      <h1 style="color:#192852;margin-top: 40px;padding-bottom: 2%;">Course objective</h1>
+      <p style="letter-spacing: 1%;font-size: 18px;padding: 2%;">{{op.objective}}</p>
     </div>
     <div class="container">
         <form action="action_page.php">
@@ -314,15 +320,15 @@ student app  </div>
 
 
   <section class="topics" style="margin-left: 200px;margin-top: 150px;" >
-        <h1 style="color:#192852;">Key Topics Covered</h1>
+        <h1 style="color:#192852;padding-bottom:2% ;">Key Topics Covered</h1>
         <div class="inner"style="display: flex;" >
         <div class="specific" style="margin-right: 100px;" >
         {% for i in value2.key1 %}
         {% if forloop.counter == 1 %}
-        <h2 style="color:#192852;padding-left: 10px;">{{i}}</h2>
+        <h2 style="color:#192852;padding-left: 10px;padding-top:2%">{{i}}</h2>
         <ul>
         {% else %}
-            <li>{{i}}</li>
+            <li style="list-style: none;">{{i}}</li>
         {% endif %}
         {% endfor %}
         </ul>
@@ -331,10 +337,10 @@ student app  </div>
        <div class="specific" >
         {% for i in value2.key2 %}
         {% if forloop.counter == 1 %}
-        <h2 style="color:#192852;padding-left: 10px;">{{i}}</h2>
+        <h2 style="color:#192852;padding-left: 10px;padding-top:2%">{{i}}</h2>
         <ul>
         {% else %}
-            <li>{{i}}</li>
+            <li style="list-style: none;">{{i}}</li>
         {% endif %}
         {% endfor %}
         </ul>
