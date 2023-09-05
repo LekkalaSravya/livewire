@@ -6,6 +6,22 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>LIVEWIRE | ISO Certified Training Institute</title>
         <link href="{% static 'stylesmine.css' %}" rel="stylesheet" type="text/css" />
+        <style>
+          @media only screen and (max-width: 600px) {
+         .internships{
+          display: inline-block;
+          width:200%;
+         }
+         .internship_content{
+          padding-left: -30%;
+         }
+         .logo{
+          display: none;
+         }
+
+        }
+          </style>
+
     </head>
     <body>
         <div class="top">
@@ -115,7 +131,7 @@ student app  </div>
         </main>
      </div> 
     
-        <section  >
+<section>
 <div class="internships"> 
             <div class="heading" style="background: rgb(15, 15, 62);">
                 <h2>
@@ -210,7 +226,7 @@ student app  </div>
         </div>
             <button class="btn" style="align-items: center;margin-left: 550px;">Apply now</button>
         </section>
-        <section class="internship_offers" style="margin-top: 100px;margin-bottom: 100px;">                                         
+        <di class="internship_offers" style="margin-top: 100px;margin-bottom: 100px;">                                         
         <div class="internoffers">
             <h1>
                 Internships offered at
@@ -218,9 +234,10 @@ student app  </div>
           </div>
           <div class="internship_img3" style="margin-top: 50px;">
             <img src="{% static 'images/sysfore.png' %}">
-            <img src="{% static 'photos/inforios.png' %}">
-            <img src="{% static 'photos/interdeccan.png' %}">
+            <img src="{% static 'images/inforios.png' %}">
+            <img src="{% static 'images/interdeccan.png' %}">
           </div>
+        
         </section>
         <div class="container" style="width:100%;margin-right: -50px; ">
        
@@ -247,46 +264,35 @@ student app  </div>
           <h2 class="ft-title">Quick Links</h2>
           <ul>
             <li><a href="#">About</a></li>
-            <li><a href="#">Webinar</a></li>
+            <li><a href="webin/">Webinar</a></li>
             <li><a href="#">Blog</a></li>
-            <li><a href="#">Student Corner</a></li>
-            <li><a href="#">Contact</a></li>
+             
+            <li><a href="contacts/">Contact</a></li>
           </ul>
         </div>
         <div class="ft-main-item">
           <h2 class="ft-title">Technologies Offered</h2>
           <ul>
-            <li><a href="#">Software Development</a></li>
-            <li><a href="#">Electronic Design Automation</a></li>
-            <li><a href="#">Industrial Automation</a></li>
-            <li><a href="#">IT Infrastructure Management</a></li>
-            <li><a href="#">Data Science</a></li>
-            <li><a href="#">Machine Learning</a></li>
+            <li><a href="/java">Software Development</a></li>
+            <li><a href="/epsa">Electronic Design Automation</a></li>
+            <li><a href="/microcont">Industrial Automation</a></li>
+            <li><a href="/neteng">IT Infrastructure Management</a></li>
+            <li><a href="/ds">Data Science</a></li>
+            <li><a href="/ml">Machine Learning</a></li>
           </ul>
         </div>
         <div class="ft-main-item" style="float:right;">
             <h2 class="ft-title">Trending Courses</h2>
             <ul>
-              <li><a href="#">Python</a></li>
-              <li><a href="#">Data Science</a></li>
-              <li><a href="#">blockchain</a></li>
-              <li><a href="#">IOT</a></li>
-              <li><a href="#">Robotic Process Autonmation(RPA)</a></li>
+              <li><a href="/python">Python</a></li>
+              <li><a href="/ds">Data Science</a></li>
+              <li><a href="/bc">blockchain</a></li>
+              <li><a href="/IOT">IOT</a></li>
+              <li><a href="/rpa">Robotic Process Autonmation(RPA)</a></li>
               
             </ul>
           </div>
         </div>
       </div>
-          <div class="pictures" style="float:right;padding: 20px; margin-top: 0%;gap:10px;margin-right: 50px; background: white">
-            <div class="lg:flex grid grid-cols-2 justify-end items-center gap-12 mb-8 pt-6 p-5" style="padding-left:40px;padding-bottom: 30px;padding-top:-50px">
-              <img alt="future-skills" title="future-skills" src="{% static 'images/future-skills.png' %}" width="150px" height="80px" decoding="async" data-nimg="1" loading="lazy" style="color:transparent">
-              <img alt="skill-india" title="skill-india" src="{% static 'images/skill-india.webp' %}" width="150px" height="80px" decoding="async" data-nimg="1" loading="lazy" style="color:transparent">
-              <img alt="nsdc" title="nsdc" src="{% static 'images/nsdc.webp' %}" width="150px" height="80px" decoding="async" data-nimg="1" loading="lazy" style="color:transparent">
-              <img alt="livewire-logo" title="livewire-logo" src="{% static 'images/livewire-logo.png ' %}" width="150px" height="40px" decoding="async" data-nimg="1" class="h-6" loading="lazy" style="color:transparent">
-          </div>
-       
           
-      
-      
-    </div>
     </body>
