@@ -115,6 +115,69 @@
       
 
 
+@media only screen and (max-width: 600px) {
+  body {
+   margin:0;
+   padding:0;
+  }
+  .logo img{
+    width:10%;
+    padding-right: 30px;
+    ;
+  }
+  .slider img{
+    width:100%;
+    height:40px;
+  }
+  .trend{
+    display: flex;
+    flex-direction:column;
+    grid-gap:40px;
+  }
+  .future-cou{
+    display: flex;
+    flex-direction: column;
+  }
+  .nass-cour{
+    display: flex;
+    flex-direction: column;
+    grid-gap:40px;
+  }
+  .top-courses{
+   height:1800px;
+  }
+  .nasscom-1{
+    height:1800px;
+    height:100%;
+  }
+  .technology{
+    display: flex;
+    flex-direction: column;
+    grid-gap:40px;
+    display: block;
+  }
+  .top-tech{
+    height:1600px;
+  }
+  .gridc{
+    display: flex;
+    flex-direction: column;
+    color: #000000;
+  }
+  .shadow img{
+    display: block;
+  }
+  .trend-course{
+    height:550px;
+  }
+  .nasscom-1{
+    height:1600px;
+  }
+  .Nasscom{
+    height:2000px;
+    width:300px;
+  }
+}
      
     </style>
 </head>
@@ -126,7 +189,7 @@
             <div class="items">
                 <a class="topbar" href="/intern">Internship</a>
                 <a class="topbar" href="#">Blog</a>
-                <a class="topbar" href="contact/">Locate Us</a>
+                <a class="topbar" href="contacts/">Locate Us</a>
             </div>
             <div class="appdown" style="color:white">
                 <div class="appdownload">
@@ -284,7 +347,7 @@ student app  </div>
      <section>
         <div class="top-courses">
             <h3>Top Trending Courses</h3>
-            <div class="trend"> 
+            <div class="trend" > 
             <div class="trend-course"  style="height:400px">
                   <img src="{% static 'images/Asp.net.jpg' %}" alt="" width="250px" height="150px">
                   <h5>Trending Courses<br></h5>
@@ -460,7 +523,7 @@ student app  </div>
     <div class="recruiters" >
         <h1 style="color:#0f3296;text-align: center;padding-top: 100px;">Prime Recruiters</h1>
         
-          <div class="gridc" style="display: grid;grid-template-columns: repeat(4, 1fr);margin:100px;" >
+          <div class="gridc" style="display: grid;grid-template-columns: repeat(4, 1fr);margin:100px;@media (max-width:300px){display: flex;flex-direction:column;color:black}" >
               <div class="shadow" ><img alt="iconalt1" src="{% static 'images/ibm.webp' %}" width="200" height="100"  /></div>
               <div class="shadow"><img alt="iconalt1" src="{% static 'images/infosys.webp' %}" width="200" height="100"  /></div>
               <div class="shadow"><img alt="iconalt1" src="{% static 'images/tcs.webp' %}" width="200" height="100" /></div>
@@ -525,22 +588,22 @@ student app  </div>
             <div class="ft-main-item">
               <h2 class="ft-title">Technologies Offered</h2>
               <ul>
-                <li><a href="#">Software Development</a></li>
-                <li><a href="#">Electronic Design Automation</a></li>
-                <li><a href="#">Industrial Automation</a></li>
-                <li><a href="#">IT Infrastructure Management</a></li>
-                <li><a href="#">Data Science</a></li>
-                <li><a href="#">Machine Learning</a></li>
+                <li><a href="recomm/">Software Development</a></li>
+                <li><a href="/epsa">Electronic Design Automation</a></li>
+                <li><a href="/microcont">Industrial Automation</a></li>
+                <li><a href="/neteng">IT Infrastructure Management</a></li>
+                <li><a href="/ds">Data Science</a></li>
+                <li><a href="/ml">Machine Learning</a></li>
               </ul>
             </div>
             <div class="ft-main-item" style="float:right;">
                 <h2 class="ft-title">Trending Courses</h2>
                 <ul>
-                  <li><a href="#">Python</a></li>
-                  <li><a href="#">Data Science</a></li>
-                  <li><a href="#">blockchain</a></li>
-                  <li><a href="#">IOT</a></li>
-                  <li><a href="#">Robotic Process Autonmation(RPA)</a></li>
+                  <li><a href="/python">Python</a></li>
+                  <li><a href="/ds">Data Science</a></li>
+                  <li><a href="/bc">blockchain</a></li>
+                  <li><a href="/IOT">IOT</a></li>
+                  <li><a href="/rpa">Robotic Process Autonmation(RPA)</a></li>
                   
                 </ul>
               </div>

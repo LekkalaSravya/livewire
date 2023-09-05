@@ -196,8 +196,11 @@ html{
 .internshipdt{
     display: flex;
 }
+.ft-main{
+    padding-left: -20%;
+}
 .ft-main-item{
-    padding:20px;
+    padding:-20px;
    }
    .ft-main-item p{
     font-size: 18px;
