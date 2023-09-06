@@ -688,7 +688,7 @@ body{
   .top-tech h3{
       margin-left: 650px;
       margin-right: 550px;
-      border-bottom: 2px solid red;
+      
       font-size: 28px;
       font-weight: bold;
   }
@@ -731,7 +731,7 @@ body{
       padding-top: 40px;
       margin-left: 180px;
       margin-right: 100px;
-      height:330px
+      height:360px
   }
   .top-courses{
       margin-top: 80px;
@@ -741,7 +741,7 @@ body{
       margin-left: 600px;
       margin-right: 650px;
       font-size: 28px;
-      border-bottom: 2px solid red;
+      
   }
   .trend-course{
       width:270px;
@@ -771,7 +771,7 @@ body{
   }
   .trend-course a{ 
       margin-left: 15px;
-      margin-top: 25px;
+      margin-top: 30px;
       padding: 5px;
       border-left:0.5px solid black;
       border-bottom:0.5px solid black ;
@@ -807,7 +807,7 @@ body{
       margin-left: 600px;
       font-size: 25px;
       margin-right: 580px;
-      border-bottom: 2px solid red;
+      
   }
   .future-skipri{
       padding-top: 50px;

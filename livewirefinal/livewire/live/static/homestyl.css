@@ -228,7 +228,7 @@ li .stu-login{
 .top-tech h3{
     margin-left: 650px;
     margin-right: 550px;
-    border-bottom: 2px solid red;
+    
     font-size: 28px;
     font-weight: bold;
 }
@@ -280,7 +280,7 @@ li .stu-login{
 .top-courses h3{
     
     font-size: 28px;
-    border-bottom: 2px solid red;
+    
 }
 .trend-course{
     width:270px;
@@ -346,7 +346,7 @@ li .stu-login{
     margin-left: 600px;
     font-size: 25px;
     margin-right: 580px;
-    border-bottom: 2px solid red;
+   
 }
 .future-skipri{
     padding-top: 50px;

@@ -112,6 +112,41 @@
       border-radius: 5px;
       background:linear-gradient(to right,blue,red) ;
 }
+.nasscom-1{
+  height:600px;
+}
+.gridc{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin:100px;
+}
+.groupi{
+  width:50%;
+  padding-left: 170px;
+}
+.groupr{
+  padding-left: -50px;
+  width:50%;
+  padding-top: 50px;
+  padding-bottom:50px;
+}
+.about{
+  padding-left: 100px;
+}
+.hi{
+  background-color: #192852;
+  width:220px;
+}
+.ft-main{
+  display:flex;
+  background-color: #eef2ff;
+  margin-bottom: 0;margin-top: 10%;
+  
+}
+.dropdown{
+  margin-top:-80px;
+  margin-left: 500PX;
+}
       
 
 
@@ -145,6 +180,7 @@
   }
   .top-courses{
    height:1800px;
+   margin-left: -5%;
   }
   .nasscom-1{
     height:1800px;
@@ -171,12 +207,178 @@
     height:550px;
   }
   .nasscom-1{
-    height:1600px;
+    height:100%;
   }
   .Nasscom{
     height:2000px;
     width:300px;
   }
+  .technology{
+    display: flex;
+    margin-right: 2%;
+    margin-left: -2%;
+  }
+  /* .offered{
+    margin-right: 10%;
+    margin-right:50px;
+  } */
+  .top-tech{
+    height: 100%;
+    margin-right: 5%;
+    margin-left:6%;
+  }
+  .top-tech h3{
+    align-items: center;
+    text-align: center;
+    margin-left: -28%;
+
+  }
+  .meta{
+    display:flex;
+    height:100%;
+  }
+  
+  .metal{
+    margin-right: 10%;
+  }
+  .top-courses h3{
+    margin-left: 8%;
+    
+    
+    
+  }
+  .Nasscom h3{
+    margin-left: 60%;
+   
+  }
+  .metal{
+    margin-left: -20px;
+  }
+  .gridc{
+    margin-left: 10%;
+    display: flex;
+    flex-direction:column;
+  }
+  .recruiters h1{
+    
+    margin-right: 60%;
+  }
+  .group{
+    display: flex;
+    flex-direction: column;
+  }
+  .groupi{
+    width: 400px;
+    margin-left: -170px;
+  }
+  .groupr{
+    width: 450px;
+    margin-left: 20px;;
+  }
+  .part{
+    width: 500px;
+    height:12%;
+  }
+  .five{
+    display: flex;
+    flex-direction: column;
+    height:100%;
+    width:250px;
+    margin-left: 20%;
+  }
+  .demand{
+    margin-left: -10%;
+    width:400px;
+  }
+  .ft-main{
+    display: flex;
+    flex-direction: column;
+  }
+  .about{
+    
+    margin-left: -70px;
+    width:400px;
+  }
+  
+  .trend-course a{
+    
+      margin-left: 15px;
+      margin-top: 33px;
+      margin-bottom: 10px;
+      padding: 2px;
+      border-left:0.5px solid black;
+      border-bottom:0.5px solid black ;
+      border-right: 0.5px solid black;
+      border-top: 0.2px solid black ;
+      background: linear-gradient(to right,blue,red) ;
+       
+      border-radius: 4px;
+  
+  }
+  .logo{
+    margin-left: -2%;
+  }
+  .dropdown{
+    margin-top: 10px;
+    margin-left: -800px;
+    font-size:8px;  }
+    .dropdown a{
+      font-size: 16px;
+    }
+    .dropdown li{
+      padding:5px;
+    }
+  .books{
+        list-style-type:none;
+      transform:translateX(200px) translateY(-70px);
+      display:grid;
+      grid-template-columns:repeat(1,1fr);
+      
+      position:absolute;
+       visibility:hidden;
+    }
+    .books1{
+       
+        list-style-type:none;
+      transform:translateX(200px) translateY(-70px);
+      display:grid;
+      grid-template-columns:repeat(1,1fr);
+      
+      position:absolute;
+       visibility:hidden;
+    }
+    .books2{
+        list-style-type:none;
+      transform:translateX(200px) translateY(-70px);
+      display:grid;
+      grid-template-columns:repeat(1,1fr);
+      
+      position:absolute;
+       visibility:hidden;
+    }
+    .books3{
+        list-style-type:none;
+      transform:translateX(200px) translateY(-70px);
+      display:grid;
+      grid-template-columns:repeat(1,1fr);
+      
+      position:absolute;
+       visibility:hidden;
+    }
+    .books4{
+        list-style-type:none;
+      transform:translateX(200px) translateY(-400px);
+      display:grid;
+      grid-template-columns:repeat(1,1fr);
+      
+      position:absolute;
+       visibility:hidden;
+    }
+    .dr{
+      margin-left: -20px;
+    }
+    
+ 
 }
      
     </style>
@@ -212,7 +414,7 @@ student app  </div>
           <div class="containers">
               <div class="logo" style="padding-left: 60px;"><img src="{% static 'images/livewirelogo.png' %}" alt=""></div>
                 
-                  <ul class="dropdown" style="margin-top:-80px;margin-left: 500PX;">
+                  <ul class="dropdown" >
                   <li><a href="#">Courses</a>
                               
                                   <ul class="products">
@@ -279,8 +481,8 @@ student app  </div>
                                   </ul>
                              
                   </li>
-                  <li><a href="webin/">Webinar</a></li>
-                  <li><a href="contacts/">Contact</a></li>
+                  <li><a href="webin/" class="dr">Webinar</a></li>
+                  <li><a href="contacts/" class="dr">Contact</a></li>
               </ul>
           
            </div>
@@ -392,7 +594,7 @@ student app  </div>
 </div>
         </div>
      </section>
-     <section class="nasscom-1" style="height:600px">
+     <section class="nasscom-1" >
         <div class="Nasscom">
             <h3>NASSCOM Approved Courses</h3>
             <div class="nass-cour"  >
@@ -523,7 +725,7 @@ student app  </div>
     <div class="recruiters" >
         <h1 style="color:#0f3296;text-align: center;padding-top: 100px;">Prime Recruiters</h1>
         
-          <div class="gridc" style="display: grid;grid-template-columns: repeat(4, 1fr);margin:100px;@media (max-width:300px){display: flex;flex-direction:column;color:black}" >
+          <div class="gridc"  >
               <div class="shadow" ><img alt="iconalt1" src="{% static 'images/ibm.webp' %}" width="200" height="100"  /></div>
               <div class="shadow"><img alt="iconalt1" src="{% static 'images/infosys.webp' %}" width="200" height="100"  /></div>
               <div class="shadow"><img alt="iconalt1" src="{% static 'images/tcs.webp' %}" width="200" height="100" /></div>
@@ -539,10 +741,10 @@ student app  </div>
       
       </div>
       <div class="group" style="display:flex;">
-        <div class="groupi" style="width:50%;padding-left: 170px;">
+        <div class="groupi" >
           <img src="{% static 'images/group.webp'%}" width="500" height="400" alt="">
         </div>
-        <div class="groupr" style="padding-left: -50px;width:50%;padding-top: 50px;padding-bottom:50px;">
+        <div class="groupr" >
           <h1 style="color:#0f3296;padding:20px 0;">
             Internships for Students
       
@@ -558,12 +760,12 @@ student app  </div>
       <div>
         <footer style="width:100%;">
           
-          <div class="ft-main" style="display:flex;background-color: #eef2ff;margin-bottom: 0;margin-top: 10%;">
-            <div class="ft-main-item" style="padding-left: 100px;">
+          <div class="ft-main" >
+            <div class="ft-main-item about" >
               <h2 class="ft-title">About</h2>
               <p>1st Floor, K.R. Ahamed Sha <br/>office complex, No. 25, Dr.<br/> Radhakrishnan Salai, Mylapore, Chennai - 600 004,<br/> Tamil Nadu, India.</p>
               <h2 style="color:#192852;">Get In Touch</h2>
-              <p class="flex bg-[#192852] p-2 text-white gap-2 text-sm w-[70%] font-light justify-center" style="background-color: #192852;width:220px;"><h4>Email</h4> <a href="mailto:info@livewireindia.com" style="color:black;">info@livewireindia.com</a></p>
+              <p class="flex bg-[#192852] p-2 text-white gap-2 text-sm w-[70%] font-light justify-center hi" ><h4>Email</h4> <a href="mailto:info@livewireindia.com" style="color:black;">info@livewireindia.com</a></p>
               <div class="ft-social">
                 <ul class="ft-social-list" style="display:flex;padding:10px;gap:10px;">
                   <li><a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i>
