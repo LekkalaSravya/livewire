@@ -142,6 +142,189 @@
  .items a{
   color:white;
  }
+ @media only screen and (max-width: 600px) {
+        body {
+            margin: 0;
+            padding: 0;
+            width:1000px;
+            
+        }
+        .head-cont{
+            display: flex;
+            flex-direction: column;
+             height:500px ;
+             padding-bottom:20px;
+        }
+        .logo img{
+          height:20px ;
+          width:100px;
+          margin-left: -10px;
+        }
+        .cont-1{
+          padding-bottom: 50px;
+          
+        }
+        .cont-1 h3{
+          width:100%;
+          font-size: 25px;
+          padding-top: 0px;
+          margin-left: -90px;
+        }
+        .cont-1 p{
+          margin-left: -90px;
+          font-size: 17.3px;
+          padding-right: 2px;
+        }
+        .cont-1 a{
+          margin-left: -80px;
+        }
+        .cont-2 img { 
+          height:250px;
+        }
+        .cou-high{
+          width:600px;
+          margin-left:-20px;
+           
+        }
+        .highli{
+          display:inline-block;
+          border-right: 0px;
+        }
+        .progr-dura{
+        border-right:  none;
+        padding-top: 10px;
+        padding-left: 60px;
+             
+    }
+    .progr-dur{
+      padding-top: 10px;
+      padding-left: 60px;
+    }
+    .para{
+      width:300px;
+    }
+    .para h1{
+      margin-left: -122px;
+      font-size: 27px;
+    }
+    .para p{
+      margin-left: -120px;
+    }
+    .conte{
+      display: flex;
+      flex-direction: column;
+    }
+    .container{
+      margin-left: 50px;
+      margin-top: 20px;
+    }
+    .inner{
+      width:200px;
+      display:flex;
+      grid-gap:2rem;
+      flex-direction: column;
+    }
+    .specific{
+      width:350px;
+    }
+    .scope{
+      width:500px;
+      display:flex;
+
+      flex-direction: column;
+    }
+    .wflex{
+      
+      width:530px;
+    }
+    .wflex h1{
+      margin-left: -40px;
+    }
+    .wflex p{
+      margin-left: -40px;
+    }
+    .wiflex{
+      display:flex;
+      width:400px;
+grid-gap:2rem;
+      flex-direction: column;
+    }
+     .pro-project {
+      width:500px;
+      display: flex;
+      flex-direction: column;
+     }
+     .pro-project h3{
+      margin-left: 15px;
+     }
+     .projects{
+      display: flex;
+      flex-direction: column;
+     }
+     .pro-1{
+      margin-left: -30px;
+     }
+     .pro-2{
+      margin-left: -120px;
+      margin-top: 40px;
+     }
+     .bg img{
+      height:1550px;
+     }
+     .promise{
+      height:1550px;
+     }
+     .pcard{
+      display: flex;
+      flex-direction: column;
+     }
+     .associa{
+      display: flex;
+      flex-direction: column;
+     }
+     .asso-coun{
+      display: none;
+    }
+    .assocoun-1{
+      width:500px;
+      margin-left: -80px;
+    }
+    .faq{
+      width:500px;
+    }
+    .faq-container{
+      margin-left: -20px;
+    }
+    .navtype{
+
+      display: flex;
+      flex-direction: column;
+      height:150px;
+    }
+    .appdown{
+      margin-left: -180px;
+      margin-top: 20px;
+
+    }
+    .mail-item{
+      margin-left: -60px;
+    }
+    .containers{
+      width:350px;
+      margin-left: -240px;
+      margin-top: 50px;
+    }
+    .logo{
+      display: none;
+    }
+    .containers ul li a{
+      display: flex;
+      flex-direction: column;
+      padding-left: -10px;
+    }
+    
+  }
+
     </style>
 </head>
 
@@ -152,7 +335,7 @@
             <div class="navtype">
                 <div class="items" style="color: white;">
                     <a class="topbar" href="intern/">Internship</a>
-                    <a class="topbar" href="#">Student Corner</a>
+                    <a class="topbar" href="#">Blog</a>
                     <a class="topbar" href="contact/">Locate Us</a>
                 </div>
                 <div class="appdown">
@@ -302,7 +485,7 @@ student app  </div>
 </div>
 
 
-   <section style="display:flex;margin-top: 10%;margin-left: -3%;">
+   <section class="conte" style="display:flex;margin-top: 10%;margin-left: -3%;">
     <div class="para">
       <h1 style="color:#192852; padding-bottom: 2%;">{{op.name2}}</h1>
       <p style="letter-spacing: 2%;font-size: 18px;padding: 2%;">{{op.des2}}</p>
@@ -412,7 +595,7 @@ student app  </div>
     <div class="projects">
       <div class="pro-1">
     {% for i,j in value2.key3%}
-        <div class="bank">
+        <div class="bank" style="height:172px">
           <p style="padding-top: 4%;padding-bottom: 4%;">{{i}}
 
           </p>
