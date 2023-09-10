@@ -6,111 +6,482 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="{% static 'contact.css' %}" rel="stylesheet" type="text/css" />
     <title>Document</title>
+    <style>
+      .ft-main{
+        display:flex;
+      }
+      .about{
+        margin-left:100px;
+      }
+      .dropdown{
+        margin-top:-40px;
+        margin-left: 390px;
+      }
+      .logo{
+        padding-left: 60px;
+        padding-top: 10px;
+      }
+      .c-form{
+        display: flex;
+      }
+      .map{
+        width:55%;
+        margin-left:100px ;
+        margin-top: 100px;
+      }
+      .container{
+        width:40%;
+         margin-right:200px;
+         margin-top:80px;
+      }
+      @media only screen and (max-width: 600px) {
+        .ft-main{
+  display:flex;
+  background-color: #eef2ff;
+  margin-bottom: 0;margin-top: 10%;
+  
+}
+        .logo{
+    margin-left: -2%;
+    width:50px;
+  }
+  .dropdown{
+    margin-top: 10px;
+    margin-left: -800px;
+    font-size:8px;  }
+    .dropdown a{
+      font-size: 16px;
+    }
+    .dropdown li{
+      padding:5px;
+    }
+  .books{
+        list-style-type:none;
+      transform:translateX(200px) translateY(-70px);
+      display:grid;
+      grid-template-columns:repeat(1,1fr);
+      
+      position:absolute;
+       visibility:hidden;
+    }
+    .books1{
+       
+        list-style-type:none;
+      transform:translateX(200px) translateY(-70px);
+      display:grid;
+      grid-template-columns:repeat(1,1fr);
+      
+      position:absolute;
+       visibility:hidden;
+    }
+    .books2{
+        list-style-type:none;
+      transform:translateX(200px) translateY(-70px);
+      display:grid;
+      grid-template-columns:repeat(1,1fr);
+      
+      position:absolute;
+       visibility:hidden;
+    }
+    .books3{
+        list-style-type:none;
+      transform:translateX(200px) translateY(-70px);
+      display:grid;
+      grid-template-columns:repeat(1,1fr);
+      
+      position:absolute;
+       visibility:hidden;
+    }
+    .books4{
+        list-style-type:none;
+      transform:translateX(200px) translateY(-400px);
+      display:grid;
+      grid-template-columns:repeat(1,1fr);
+      
+      position:absolute;
+       visibility:hidden;
+    }
+    .ft-main{
+    display: flex;
+    flex-direction: column;
+  }
+  .about{
+    margin-left: 10px;;
+  }
+  
+    .dr{
+      margin-left: -20px;
+    }
+    .c-form{
+      color:blue;
+      display: flex;
+      flex-direction: column;
+    }
+    .map{
+      width: 100px;
+      height: 100px;
+      margin-left: -10%;
+    }
+    .container{
+     width: 300px;
+     margin-left: 20%;
+     margin-top:400px;
+      
+    }
+   
+  body {
+   margin:0;
+   padding:0;
+  }
+  .logo img{
+    width:10%;
+    padding-right: 30px;
+    ;
+  }
+  .slider img{
+    width:100%;
+    height:40px;
+  }
+  .trend{
+    display: flex;
+    flex-direction:column;
+    grid-gap:40px;
+  }
+  .future-cou{
+    display: flex;
+    flex-direction: column;
+  }
+  .nass-cour{
+    display: flex;
+    flex-direction: column;
+    grid-gap:40px;
+  }
+  .top-courses{
+   height:1800px;
+   margin-left: -5%;
+  }
+  .nasscom-1{
+    height:1800px;
+    height:100%;
+  }
+  .technology{
+    display: flex;
+    flex-direction: column;
+    grid-gap:40px;
+    display: block;
+  }
+  .top-tech{
+    height:1600px;
+  }
+  .gridc{
+    display: flex;
+    flex-direction: column;
+    color: #000000;
+  }
+  .shadow img{
+    display: block;
+  }
+  .trend-course{
+    height:550px;
+  }
+  .nasscom-1{
+    height:100%;
+  }
+  .Nasscom{
+    height:2000px;
+    width:300px;
+  }
+  .technology{
+    display: flex;
+    margin-right: 2%;
+    margin-left: -2%;
+  }
+  /* .offered{
+    margin-right: 10%;
+    margin-right:50px;
+  } */
+  .top-tech{
+    height: 100%;
+    margin-right: 5%;
+    margin-left:6%;
+  }
+  .top-tech h3{
+    align-items: center;
+    text-align: center;
+    margin-left: -28%;
+
+  }
+  .meta{
+    display:flex;
+    height:100%;
+  }
+  
+  .metal{
+    margin-right: 10%;
+  }
+  .top-courses h3{
+    margin-left: 8%;
+    
+    
+    
+  }
+  .Nasscom h3{
+    margin-left: 60%;
+   
+  }
+  .metal{
+    margin-left: -20px;
+  }
+  .gridc{
+    margin-left: 10%;
+    display: flex;
+    flex-direction:column;
+  }
+  .recruiters h1{
+    
+    margin-right: 60%;
+  }
+  .group{
+    display: flex;
+    flex-direction: column;
+  }
+  .groupi{
+    width: 400px;
+    margin-left: -170px;
+  }
+  .groupr{
+    width: 450px;
+    margin-left: 20px;;
+  }
+  .part{
+    width: 500px;
+    height:12%;
+  }
+  .five{
+    display: flex;
+    flex-direction: column;
+    height:100%;
+    width:250px;
+    margin-left: 20%;
+  }
+  .demand{
+    margin-left: -10%;
+    width:400px;
+  }
+  .ft-main{
+    display: flex;
+    flex-direction: column;
+  }
+  .about{
+    
+    margin-left: -70px;
+    width:400px;
+  }
+  
+  .trend-course a{
+    
+      margin-left: 15px;
+      margin-top: 33px;
+      margin-bottom: 10px;
+      padding: 2px;
+      border-left:0.5px solid black;
+      border-bottom:0.5px solid black ;
+      border-right: 0.5px solid black;
+      border-top: 0.2px solid black ;
+      background: linear-gradient(to right,blue,red) ;
+       
+      border-radius: 4px;
+  
+  }
+  .logo{
+    margin-left: -2%;
+  }
+  .dropdown{
+    margin-top: 10px;
+    margin-left: -800px;
+    font-size:8px;  }
+    .dropdown a{
+      font-size: 16px;
+    }
+    .dropdown li{
+      padding:5px;
+    }
+  .books{
+        list-style-type:none;
+      transform:translateX(200px) translateY(-70px);
+      display:grid;
+      grid-template-columns:repeat(1,1fr);
+      
+      position:absolute;
+       visibility:hidden;
+    }
+    .books1{
+       
+        list-style-type:none;
+      transform:translateX(200px) translateY(-70px);
+      display:grid;
+      grid-template-columns:repeat(1,1fr);
+      
+      position:absolute;
+       visibility:hidden;
+    }
+    .books2{
+        list-style-type:none;
+      transform:translateX(200px) translateY(-70px);
+      display:grid;
+      grid-template-columns:repeat(1,1fr);
+      
+      position:absolute;
+       visibility:hidden;
+    }
+    .books3{
+        list-style-type:none;
+      transform:translateX(200px) translateY(-70px);
+      display:grid;
+      grid-template-columns:repeat(1,1fr);
+      
+      position:absolute;
+       visibility:hidden;
+    }
+    .books4{
+        list-style-type:none;
+      transform:translateX(200px) translateY(-400px);
+      display:grid;
+      grid-template-columns:repeat(1,1fr);
+      
+      position:absolute;
+       visibility:hidden;
+    }
+    .dr{
+      margin-left: -80px;
+    }
+    .containers{
+      margin-left: 700px;
+    }
+    .dropdown li{
+      padding:-50px;
+    }
+    .dropdown{
+      margin-right: 170px;
+    }
+    .items{
+      display: flex;
+      
+    }
+    .items a{
+      padding-top: 4px;
+    }
+ 
+    .about{
+      padding-left: 100px;
+    }
+
+    
+      }
+    </style>
 </head>
-<body>
+<body onload="slider()" style="font-family: 'Poppins', sans-serif;">
   <div class="top">
     <main class="header">
-        <div class="navtype">
+        <div class="navtype" style="background-color: #0d0761;
+        color:#eef2ff;">
             <div class="items">
-                <a class="topbar" href="intern/">Internship</a>
-                <a class="topbar" href="#">Student Corner</a>
+                <a class="topbar" href="/intern">Internship</a>
                 <a class="topbar" href="#">Blog</a>
                 <a class="topbar" href="contacts/">Locate Us</a>
             </div>
-            <div class="appdown">
-                <div class="appdownload">
-                    Download<br>
-student app  </div>
+            <div class="appdown" style="color:white">
+                
 <div class="pic">   
- <a href="https://play.google.com/store/apps/details?id=com.livewireindia.lms"><span> <img src="https://www.livewireindia.com/assets/images/google-play.svg" alt="" width="120px" ></span>
+ <a href="https://play.google.com/store/apps/details?id=com.livewireindia.lms"><span> <img src="{% static 'images/google-play.svg' %}" alt="" width="120px" ></span>
                     </a>  
                 </div>
              </div>
              <div class="mail-item"> 
                  <div class="mail">
-                     
-                    <img src="mail-right-arrow.svg" alt="" width="50px" height="50px" ></div>  
-                    <div class="id"> <a href="">info@livewireindia.com</a></div>
+                  
+                    <div class="id"> <a href="" style="color:white;padding-left: 50px;">info@livewireindia.com</a></div>
                  </div>
                 </div>
             </div>
         </div>
         <nav>
+          <div class="logo" ><img src="{% static 'images/livewirelogo.png' %}" alt=""></div>
           <div class="containers">
-            <div class="logo" style="margin-left: 50px;"><img src="{% static 'images/livewirelogo.png' %}" alt="" ></div>
               
-                <ul class="dropdown" style="margin-top:-40px;margin-left: 390px;">
-                <li><a href="#">Courses</a>
-                            
-                                <ul class="products">
-                                  
-                                    <li><a href="#">Software Development</a>
-                                      <ul class="books">
-                                        <li> <a href="/java">Java</a></li>
-                                        <li> <a href="/adjava">Advanced Java</a></li>
-                                        <li> <a href="/c">C Programming</a></li>
-
-                                       <li><a href="/ac">C++ Programming</a></li>
-                                       <li><a href="/mern">Full Stack Development</a></li>
-
-                                       <li> <a href="/django">Django</a></li>
-                                       <li> <a href="/app">App Development</a></li>
-                                       <li> <a href="/cs">ASP.net with C#</a></li>
-
-
-                                      </ul>
+                
+                  <ul class="dropdown" >
+                  <li><a href="#">Courses</a>
+                              
+                                  <ul class="products">
                                     
-                                    
-                                    
-                                    </li>
-                                    <li><a href="#">Industrial Automation</a>
-                                      <ul class="books1">
-                                        <li> <a href="/plc">PLC And CADA</a></li>
-                                        <li> <a href="/epsa">Electrical power system analysis</a></li>
-                                         
+                                      <li><a href="#">Software Development</a>
+                                        <ul class="books">
+                                          <li> <a href="/java">Java</a></li>
+                                          <li> <a href="/adjava">Advanced Java</a></li>
+                                          <li> <a href="/c">C Programming</a></li>
+
+                                         <li><a href="/ac">C++ Programming</a></li>
+                                         <li><a href="/mern">Full Stack Development</a></li>
+
+                                         <li> <a href="/django">Django</a></li>
+                                         <li> <a href="/app">Android App Development</a></li>
+                                         <li> <a href="/cs">ASP.net with C#</a></li>
+
+
                                         </ul>
-                                    </li>
-                                    <li><a href="#">Electronic Design Automation</a>
-                                      <ul class="books2">
-                                        <li> <a href="/matlab">MATLAB</a></li>
-                                        <li> <a href="/microcont">MicroController</a></li>
-                                        <li> <a href="/amicrocont">Advanced Microcontroller</a></li>
-                                        </ul>
+                                      
+                                      
+                                      
                                       </li>
-                                    <li><a href="#">ITIM</a>
-                                      <ul class="books3">
-                                        <li> <a href="/neteng">Network Enginnering</a></li>
-                                        <li> <a href="/netsec">Network Security</a></li>
-                                        <li> <a href="/ethical">Ethical Hacking</a></li>
-                                        </ul>
+                                      <li><a href="#">Industrial Automation</a>
+                                        <ul class="books1">
+                                          <li> <a href="/plc">PLC And CADA</a></li>
+                                          <li> <a href="/epsa">Electrical power system analysis</a></li>
+                                           
+                                          </ul>
                                       </li>
-                                    <li><a href="#">Special Programs</a>
-                                      <ul class="books4">
-                                        <li> <a href="/ds">Data Science</a></li>
-                                        <li> <a href="/dsde">Data Science and Data Engineering using Python</a></li>
-                                        <li> <a href="/dsr">Data Science Using R</a></li>
-                                        <li> <a href="/dapb">Data Analytics using Power BI</a></li>
-                                        <li> <a href="/ml">Machiene Learning</a></li>
-                                        <li> <a href="/mlp">Machiene Learning using Python</a></li>
-                                        <li> <a href="/mlr">Machiene Learning using R</a></li>
-                                        <li> <a href="/bc">Blockchain</a></li>
-                                        <li> <a href="/ai">Artificial Intelligence</a></li>
-                      
-                                        <li> <a href="/rpa">RPA</a></li>
-                                        <li> <a href="/robo">Robotics</a></li>
-                                        <li> <a href="/IOT">IOT</a></li>
-                                        <li> <a href="/nlp">Complete Guide to NLP Chat GPT</a></li>
-                                        <li> <a href="/tdprinting">3D Printing</a></li>
-                                        </ul>
-                                      </li>
-                                </ul>
-                           
-                </li>
-                <li><a href="webin/">Webinar</a></li>
-                <li><a href="contacts/">Contact</a></li>
-            </ul>
-        
-         </div>
+                                      <li><a href="#">Electronic Design Automation</a>
+                                        <ul class="books2">
+                                          <li> <a href="/matlab">MATLAB</a></li>
+                                          <li> <a href="/microcont">MicroController</a></li>
+                                          <li> <a href="/amicrocont">Advanced Microcontroller</a></li>
+                                          </ul>
+                                        </li>
+                                      <li><a href="#">ITIM</a>
+                                        <ul class="books3">
+                                          <li> <a href="/neteng">Network Enginnering</a></li>
+                                          <li> <a href="/netsec">Network Security</a></li>
+                                          <li> <a href="/ethical">Ethical Hacking</a></li>
+                                          </ul>
+                                        </li>
+                                      <li><a href="#">Special Programs</a>
+                                        <ul class="books4">
+                                          <li> <a href="/ds">Data Science</a></li>
+                                          <li> <a href="/dsde">Data Science and Data Engineering using Python</a></li>
+                                          <li> <a href="/dsr">Data Science Using R</a></li>
+                                          <li> <a href="/dapb">Data Analytics using Power BI</a></li>
+                                          <li> <a href="/ml">Machine Learning</a></li>
+                                          <li> <a href="/mlp">Machine Learning using Python</a></li>
+                                          <li> <a href="/mlr">Machine Learning using R</a></li>
+                                          <li> <a href="/bc">Blockchain</a></li>
+                                          <li> <a href="/ai">Artificial Intelligence</a></li>
+                        
+                                          <li> <a href="/rpa">RPA</a></li>
+                                          <li> <a href="/robo">Robotics</a></li>
+                                          <li> <a href="/IOT">IOT</a></li>
+                                          <li> <a href="/nlp">Complete Guide to NLP Chat GPT</a></li>
+                                          <li> <a href="/tdprinting">3D Printing</a></li>
+                                          </ul>
+                                        </li>
+                                  </ul>
+                             
+                  </li>
+                  <li><a href="webin/" class="dr">Webinar</a></li>
+                  <li><a href="contacts/" class="dr">Contact</a></li>
+              </ul>
+          
+           </div>
        </nav>
     </main>
  </div> 
@@ -131,16 +502,14 @@ student app  </div>
           Reach out to us for more information.</p>
        
       </div>
-        <div style="display:flex;">
+        <div class="c-form" >
 
-            <div style="width:55%;margin-left:100px ;margin-top: 100px;">
+            <div class="map">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3889.933397183689!2d80.06088777494124!3d12.847578287456484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52f7f548d72891%3A0x7a1accd77d743ca8!2sLIVEWIRE%20%7C%20Guduvanchery%20%7C%20C%2CC%2B%2B%20%7C%20Java%20%7C%20Python%20%7C%20Web%20Development%20%7C%20Full%20Stack%20%7C%20Chat%20GPT%20%7C%20Matlab%20%7C%20Datascience%20%7C!5e0!3m2!1sen!2sin!4v1692757909504!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-            <div>
-              <!-- <div class="container"style="width:40%; margin-right:200px;margin-top:80px;">
-                
-                 -->
-                 <div class="container" style="width:40%; margin-right:200px;margin-top:80px;">
+            
+              
+                 <div class="container" >
                   <form action="action_page.php">
                     <h1 style="color:#192852;text-align: center;">Enquire Now</h1>
                     
@@ -170,70 +539,65 @@ student app  </div>
             </div>
         </div>
        
-          
-          <div class="ft-main" style="display:flex;background-color: #eef2ff;margin-left: -40px;margin-bottom: 0;padding-right: 100px;margin-top:100px;">
-            <div class="ft-main-item" style="margin-left: 200px;">
-              <h2 class="ft-title">About</h2>
-              <p>1st Floor, K.R. Ahamed Sha <br/>office complex, No. 25, Dr.<br/> Radhakrishnan Salai, Mylapore, Chennai - 600 004,<br/> Tamil Nadu, India.</p>
-              <h2 style="color:#192852;">Get In Touch</h2>
-              <p class="flex bg-[#192852] p-2 text-white gap-2 text-sm w-[70%] font-light justify-center" style="background-color: #192852;width:220px;"> <h4 style="color: #192852;">Email</h4> <a href="mailto:info@livewireindia.com" style="color:black;">info@livewireindia.com</a></p>
-              <div class="ft-social">
-                <ul class="ft-social-list" style="display:flex;padding:10px;gap: 5px;">
-                  <li><a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i>
-                  </a></li>
-                  <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                  <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                  <li><a href="#"><i class="fab fa-github"></i></a></li>
-                  <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-                  <li><a href="#"><i class="fab fa-youtube"></i></a></li>
-                </ul>
-                </div>
-             </div> 
-            <div class="ft-main-item">
-              <h2 class="ft-title">Quick Links</h2>
-              <ul>
-                <li><a href="#">About</a></li>
-                <li><a href="webin/">Webinar</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Student Corner</a></li>
-                <li><a href="contacts/">Contact</a></li>
-              </ul>
-            </div>
-            <div class="ft-main-item">
-              <h2 class="ft-title">Technologies Offered</h2>
-              <ul>
-                <li><a href="/java">Software Development</a></li>
-                <li><a href="/epsa">Electronic Design Automation</a></li>
-                <li><a href="/microcont">Industrial Automation</a></li>
-                <li><a href="/neteng">IT Infrastructure Management</a></li>
-                <li><a href="/ds">Data Science</a></li>
-                <li><a href="/ml">Machine Learning</a></li>
-              </ul>
-            </div>
-            <div class="ft-main-item" style="float:right;">
-                <h2 class="ft-title">Trending Courses</h2>
+        <div>
+          <footer style="width:100%;">
+            
+            <div class="ft-main" >
+              <div class="ft-main-item about" >
+                <h2 class="ft-title">About</h2>
+                <p>1st Floor, K.R. Ahamed Sha <br/>office complex, No. 25, Dr.<br/> Radhakrishnan Salai, Mylapore, Chennai - 600 004,<br/> Tamil Nadu, India.</p>
+                <h2 style="color:#192852;">Get In Touch</h2>
+                <p class="flex bg-[#192852] p-2 text-white gap-2 text-sm w-[70%] font-light justify-center hi" ><h4>Email</h4> <a href="mailto:info@livewireindia.com" style="color:black;">info@livewireindia.com</a></p>
+                <div class="ft-social">
+                  <ul class="ft-social-list" style="display:flex;padding:10px;gap:10px;">
+                    <li><a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i>
+                    </a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-github"></i></a></li>
+                    <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                  </ul>
+                  </div>
+               </div> 
+              <div class="ft-main-item">
+                <h2 class="ft-title">Quick Links</h2>
                 <ul>
-                  <li><a href="/python">Python</a></li>
-                  <li><a href="/ds">Data Science</a></li>
-                  <li><a href="/bc">blockchain</a></li>
-                  <li><a href="/IOT">IOT</a></li>
-                  <li><a href="/rpa">Robotic Process Autonmation(RPA)</a></li>
-                  
+                  <li><a href="#">About</a></li>
+                  <li><a href="webin/">Webinar</a></li>
+                  <li><a href="#">Blog</a></li>
+                  <li><a href="contact/">Contact</a></li>
                 </ul>
               </div>
-            </div>
-              <div class="pictures" style="float:right;padding: 20px; margin-top: 0%;gap:10px;margin-right: 50px; background: white">
-                <div class="lg:flex grid grid-cols-2 justify-end items-center gap-12 mb-8 pt-6 p-5" style="padding-left:40px;padding-bottom: 30px;padding-top:-50px">
-                  <img alt="future-skills" title="future-skills" src="{% static 'images/future-skills.png' %}" width="150px" height="80px" decoding="async" data-nimg="1" loading="lazy" style="color:transparent">
-                  <img alt="skill-india" title="skill-india" src="{% static 'images/skill-india.webp' %}" width="150px" height="80px" decoding="async" data-nimg="1" loading="lazy" style="color:transparent">
-                  <img alt="nsdc" title="nsdc" src="{% static 'images/nsdc.webp' %}" width="150px" height="80px" decoding="async" data-nimg="1" loading="lazy" style="color:transparent">
-                  <img alt="livewire-logo" title="livewire-logo" src="{% static 'images/livewire-logo.png ' %}" width="150px" height="40px" decoding="async" data-nimg="1" class="h-6" loading="lazy" style="color:transparent">
+              <div class="ft-main-item">
+                <h2 class="ft-title">Technologies Offered</h2>
+                <ul>
+                  <li><a href="recomm/">Software Development</a></li>
+                  <li><a href="/epsa">Electronic Design Automation</a></li>
+                  <li><a href="/microcont">Industrial Automation</a></li>
+                  <li><a href="/neteng">IT Infrastructure Management</a></li>
+                  <li><a href="/ds">Data Science</a></li>
+                  <li><a href="/ml">Machine Learning</a></li>
+                </ul>
               </div>
-            </div>
-              
-          
-          
-        </div>
+              <div class="ft-main-item" >
+                  <h2 class="ft-title">Trending Courses</h2>
+                  <ul>
+                    <li><a href="/python">Python</a></li>
+                    <li><a href="/ds">Data Science</a></li>
+                    <li><a href="/bc">blockchain</a></li>
+                    <li><a href="/IOT">IOT</a></li>
+                    <li><a href="/rpa">Robotic Process Autonmation(RPA)</a></li>
+                    
+                  </ul>
+                </div>
+              </div>
+               
+              </div>
+                
+            
+            </footer>
+          </div>
     
 </body>
 </html>

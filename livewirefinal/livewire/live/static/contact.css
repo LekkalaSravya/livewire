@@ -1112,3 +1112,236 @@ body{
       background:#eef2ff;
      }
       
+
+
+     @media only screen and (max-width: 600px) {
+      body {
+       margin:0;
+       padding:0;
+      }
+      .logo img{
+        width:10%;
+        padding-right: 30px;
+        ;
+      }
+      .slider img{
+        width:100%;
+        height:40px;
+      }
+      .trend{
+        display: flex;
+        flex-direction:column;
+        grid-gap:40px;
+      }
+      .future-cou{
+        display: flex;
+        flex-direction: column;
+      }
+      .nass-cour{
+        display: flex;
+        flex-direction: column;
+        grid-gap:40px;
+      }
+      .top-courses{
+       height:1800px;
+       margin-left: -5%;
+      }
+      .nasscom-1{
+        height:1800px;
+        height:100%;
+      }
+      .technology{
+        display: flex;
+        flex-direction: column;
+        grid-gap:40px;
+        display: block;
+      }
+      .top-tech{
+        height:1600px;
+      }
+      .gridc{
+        display: flex;
+        flex-direction: column;
+        color: #000000;
+      }
+      .shadow img{
+        display: block;
+      }
+      .trend-course{
+        height:550px;
+      }
+      .nasscom-1{
+        height:100%;
+      }
+      .Nasscom{
+        height:2000px;
+        width:300px;
+      }
+      .technology{
+        display: flex;
+        margin-right: 2%;
+        margin-left: -2%;
+      }
+      /* .offered{
+        margin-right: 10%;
+        margin-right:50px;
+      } */
+      .top-tech{
+        height: 100%;
+        margin-right: 5%;
+        margin-left:6%;
+      }
+      .top-tech h3{
+        align-items: center;
+        text-align: center;
+        margin-left: -28%;
+    
+      }
+      .meta{
+        display:flex;
+        height:100%;
+      }
+      
+      .metal{
+        margin-right: 10%;
+      }
+      .top-courses h3{
+        margin-left: 8%;
+        
+        
+        
+      }
+      .Nasscom h3{
+        margin-left: 60%;
+       
+      }
+      .metal{
+        margin-left: -20px;
+      }
+      .gridc{
+        margin-left: 10%;
+        display: flex;
+        flex-direction:column;
+      }
+      .recruiters h1{
+        
+        margin-right: 60%;
+      }
+      .group{
+        display: flex;
+        flex-direction: column;
+      }
+      .groupi{
+        width: 400px;
+        margin-left: -170px;
+      }
+      .groupr{
+        width: 450px;
+        margin-left: 20px;;
+      }
+      .part{
+        width: 500px;
+        height:12%;
+      }
+      .five{
+        display: flex;
+        flex-direction: column;
+        height:100%;
+        width:250px;
+        margin-left: 20%;
+      }
+      .demand{
+        margin-left: -10%;
+        width:400px;
+      }
+      .ft-main{
+        display: flex;
+        flex-direction: column;
+      }
+      .about{
+        
+        margin-left: -70px;
+        width:400px;
+      }
+      
+      .trend-course a{
+        
+          margin-left: 15px;
+          margin-top: 33px;
+          margin-bottom: 10px;
+          padding: 2px;
+          border-left:0.5px solid black;
+          border-bottom:0.5px solid black ;
+          border-right: 0.5px solid black;
+          border-top: 0.2px solid black ;
+          background: linear-gradient(to right,blue,red) ;
+           
+          border-radius: 4px;
+      
+      }
+      .logo{
+        margin-left: -2%;
+      }
+      .dropdown{
+        margin-top: 10px;
+        margin-left: -800px;
+        font-size:8px;  }
+        .dropdown a{
+          font-size: 16px;
+        }
+        .dropdown li{
+          padding:5px;
+        }
+      .books{
+            list-style-type:none;
+          transform:translateX(200px) translateY(-70px);
+          display:grid;
+          grid-template-columns:repeat(1,1fr);
+          
+          position:absolute;
+           visibility:hidden;
+        }
+        .books1{
+           
+            list-style-type:none;
+          transform:translateX(200px) translateY(-70px);
+          display:grid;
+          grid-template-columns:repeat(1,1fr);
+          
+          position:absolute;
+           visibility:hidden;
+        }
+        .books2{
+            list-style-type:none;
+          transform:translateX(200px) translateY(-70px);
+          display:grid;
+          grid-template-columns:repeat(1,1fr);
+          
+          position:absolute;
+           visibility:hidden;
+        }
+        .books3{
+            list-style-type:none;
+          transform:translateX(200px) translateY(-70px);
+          display:grid;
+          grid-template-columns:repeat(1,1fr);
+          
+          position:absolute;
+           visibility:hidden;
+        }
+        .books4{
+            list-style-type:none;
+          transform:translateX(200px) translateY(-400px);
+          display:grid;
+          grid-template-columns:repeat(1,1fr);
+          
+          position:absolute;
+           visibility:hidden;
+        }
+        .dr{
+          margin-left: -20px;
+        }
+        
+     
+    }
+    
