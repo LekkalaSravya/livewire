@@ -18,3 +18,16 @@ class Livedata(models.Model):
     range1=models.IntegerField()
     range2=models.IntegerField()
     projectexp=models.TextField()
+
+class Contacts(models.Model):
+    name=models.CharField(max_length=30)
+    email=models.EmailField()
+    phone=models.CharField(max_length=10)
+    message=models.TextField()
+
+class Enquiry(models.Model):
+    lname=models.CharField(max_length=30)
+    email=models.EmailField()
+    no=models.CharField(max_length=30)
+    country=models.CharField(max_length=30)
+    state=models.CharField(max_length=30)

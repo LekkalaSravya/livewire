@@ -4,4 +4,6 @@ class LivedataAdmin(admin.ModelAdmin):
     list_display=('name','des1','intro_img','duration','name2','des2','objective','keytopic1','keytopic2','scope','range2','projectexp')
 
 admin.site.register(Livedata,LivedataAdmin)
+admin.site.register(Contacts)
+admin.site.register(Enquiry)
 # Register your models here.
