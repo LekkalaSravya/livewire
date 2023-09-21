@@ -142,11 +142,16 @@
  .items a{
   color:white;
  }
+ .about{
+  margin-left: 200px;
+ }
+ 
  @media only screen and (max-width: 600px) {
         body {
             margin: 0;
             padding: 0;
             width:1000px;
+            overflow-x: hidden;
             
         }
         .head-cont{
@@ -322,9 +327,18 @@ grid-gap:2rem;
       flex-direction: column;
       padding-left: -10px;
     }
-    
+   
+        .ft-main{
+    display: flex;
+    flex-direction: column;
+  
   }
-
+  .about{
+    margin-left: 0px;
+  }
+  
+ }
+ 
     </style>
 </head>
 
@@ -426,8 +440,8 @@ student app  </div>
                                       </ul>
                                  
                       </li>
-                      <li><a href="webin/">Webinar</a></li>
-                      <li><a href="contacts/">Contact</a></li>
+                      <li><a href="/webin">Webinar</a></li>
+                      <li><a href="/contacts">Contact</a></li>
                   </ul>
               
                </div>
@@ -847,7 +861,7 @@ student app  </div>
        
           
           <div class="ft-main" style="display:flex;background-color: #eef2ff;margin-left: -40px;margin-bottom: 0;padding-right: 100px;">
-            <div class="ft-main-item" style="margin-left: 200px;">
+            <div class="about ft-main-item ">
               <h2 class="ft-title">About</h2>
               <p>1st Floor, K.R. Ahamed Sha <br/>office complex, No. 25, Dr.<br/> Radhakrishnan Salai, Mylapore, Chennai - 600 004,<br/> Tamil Nadu, India.</p>
               <h2 style="color:#192852;">Get In Touch</h2>

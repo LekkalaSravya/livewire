@@ -378,6 +378,36 @@
 
     
       }
+      input[type=email], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+input[type=number], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+.container{
+  width:400px;
+  height:450px;
+}
+@media screen and (max-width:600px)
+{
+  .container{
+    margin-left: 10px;
+  }
+}
     </style>
 </head>
 <body onload="slider()" style="font-family: 'Poppins', sans-serif;">
@@ -477,8 +507,8 @@
                                   </ul>
                              
                   </li>
-                  <li><a href="webin/" class="dr">Webinar</a></li>
-                  <li><a href="contacts/" class="dr">Contact</a></li>
+                  <li><a href="/webin" class="dr">Webinar</a></li>
+                  <li><a href="/contacts" class="dr">Contact</a></li>
               </ul>
           
            </div>
@@ -519,7 +549,7 @@
                     
                     <input type="number" id="phone" name="phone" placeholder="Mobile">
                     <input type="email" id="email" name="email" placeholder="Email">
-                    <textarea id="message" name="message" placeholder="Message" style="height:200px"></textarea>
+                    <textarea id="message" name="message" placeholder="Message" style="height:100px"></textarea>
 
                 
                     <!-- <input type="text" id="no" name="no" placeholder="Mobie No">
