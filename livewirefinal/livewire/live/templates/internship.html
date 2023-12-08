@@ -9,8 +9,16 @@
         <style>
           @media only screen and (max-width: 600px) {
          .internships{
-          display: inline-block;
-          width:200%;
+          display: flex;
+  flex-direction: column;
+  height:400px ;
+ width:800px;
+  padding-bottom:800px;
+         }
+         .heading{
+          width:600px;
+          margin-left: -40px;
+          padding-left: 40px;
          }
           
          .logo{
@@ -38,7 +46,7 @@ margin-left: -60px;
 }
 .containers{
 width:300px;
-margin-left: 70px;
+margin-left: 90px;
 margin-top: 50px;
 }
 .logo{
@@ -49,9 +57,181 @@ display: flex;
 flex-direction: column;
 padding-left: -8px;
 } 
+ 
 .heading h2{
-  margin-left: -20px;
+  margin-left: -50px;
 }
+.dropdown{
+    margin-top: 10px;
+    margin-left: -40px;
+    font-size:8px;  }
+    .dropdown a{
+      font-size: 16px;
+    }
+    .dropdown li{
+      padding:5px;
+    }
+  .books{
+        list-style-type:none;
+      transform:translateX(200px) translateY(-70px);
+      display:grid;
+      grid-template-columns:repeat(1,1fr);
+      
+      position:absolute;
+       visibility:hidden;
+    }
+    .books1{
+       
+        list-style-type:none;
+      transform:translateX(200px) translateY(-70px);
+      display:grid;
+      grid-template-columns:repeat(1,1fr);
+      
+      position:absolute;
+       visibility:hidden;
+    }
+    .books2{
+        list-style-type:none;
+      transform:translateX(200px) translateY(-70px);
+      display:grid;
+      grid-template-columns:repeat(1,1fr);
+      
+      position:absolute;
+       visibility:hidden;
+    }
+    .books3{
+        list-style-type:none;
+      transform:translateX(200px) translateY(-70px);
+      display:grid;
+      grid-template-columns:repeat(1,1fr);
+      
+      position:absolute;
+       visibility:hidden;
+    }
+    .books4{
+        list-style-type:none;
+      transform:translateX(200px) translateY(-400px);
+      display:grid;
+      grid-template-columns:repeat(1,1fr);
+      
+      position:absolute;
+       visibility:hidden;
+    }
+    .dr{
+      margin-left: -20px;
+    }
+    .heading{
+      width:600px;
+    }
+    .heading h1{
+      margin-left:-40px;
+      padding-bottom: 30px;
+    }
+    .internship_content{
+        
+      width:300px;
+       margin-right: -100px;
+       padding-bottom: 00px;
+    }
+    .internship_content h2{
+        margin-left: -140px;
+    }
+    .internship_content p{
+      margin-left: -140px;
+      font-size: 10px;
+    }
+    .internship_content2{
+      display: flex;
+  flex-direction: column;
+  height:600px ;
+ width:500px;
+  padding-bottom:800px;
+   
+    }
+    .internship_img2{
+      padding-top: 700px;
+    }
+    .internship_list1 h1{
+      margin-left: -200px;
+    }
+    .internship_list1 h2{
+      margin-left: -200px;
+      padding-bottom: 20px;
+    }
+    .internship_list1 ul{
+      margin-left: -200px;
+    }
+    .internship_content3{
+      display: flex;
+  flex-direction: column;
+  height:1450px ;
+ width:500px;
+  padding-bottom:800px;
+  margin-left:0px;
+  
+    }
+    .duartion h1{
+      margin-left: -280px;
+    }
+    .duartion h3{
+      margin-left: 10px;
+      padding: 2px;
+    }
+    .duartion a{
+      margin-top: 5px;
+    }
+    .internshipdt{
+      display: flex;
+  flex-direction: column;
+  height:600px ;
+ width:500px;
+  padding-bottom:1000px;
+  margin-left:-50px;
+    }
+    .internship_list3{
+      margin-left: -50px;
+    }
+    .containers{
+width:300px;
+margin-left: -180px;
+margin-top: 50px;
+}
+.logo{
+display: none;
+}
+.containers ul li a{
+display: flex;
+flex-direction: column;
+padding-left: 200px;
+}
+.web-img{
+  width:71%;
+   
+}
+.web-img h1{
+  margin-left: -170px;
+}
+.web-img p{
+  margin-left: 40px;
+}
+.webinar h3{
+  margin-left: -500px;
+}
+.web-1{
+display: flex;
+flex-direction: column;
+margin-left: -100px;
+}
+.ft-main{
+  display: flex;
+  flex-direction: column;
+}
+.ft-main-item{
+  margin-left: 10px;
+}
+ 
+     
+     
 
         }
           </style>
@@ -62,10 +242,10 @@ padding-left: -8px;
         <main class="header">
             <div class="navtype">
                 <div class="items">
-                    <a class="topbar" href="#">Internship</a>
+                    <a class="topbar" href="/intern">Internship</a>
                     
                     <a class="topbar" href="#">Blog</a>
-                    <a class="topbar" href="#">Locate Us</a>
+                    <a class="topbar" href="/contacts">Locate Us</a>
                 </div>
                 <div class="appdown">
                     <div class="appdownload">
@@ -156,8 +336,8 @@ student app  </div>
                                     </ul>
                                
                     </li>
-                    <li><a href="#">Webinar</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="webin/">Webinar</a></li>
+                    <li><a href="/contacts">Contact</a></li>
                 </ul>
             
              </div>
@@ -218,7 +398,7 @@ student app  </div>
             <div class="duartion" style="margin-top: 50px;"> 
             <h1 style="padding-top: 50px;">Livewire's provides a variety of internship courses</h1>
             <h3>Hands on practice and mentor sessions
-              <a href="#">Duration:20hours</a>
+              <a href="#" class="but">Duration:20hours</a>
             </h3>
         </div>
             <div class="internshipdt">
